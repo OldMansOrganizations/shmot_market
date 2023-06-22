@@ -1,0 +1,364 @@
+
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Rubik:wght@400;700&display=swap');
+@import url(main.css);
+:root {
+    --width: 1440px;
+    --padding:116px;
+    --background:rgba(251, 248, 236, 1);
+    --color-category:#FFF;
+    --background-white:#fff;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #414141;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  color:inherit;
+}
+
+
+
+
+.container {
+    width: var(--width);
+    margin: 0 auto;
+    padding: 0 var(--padding);
+    background-color: var(--background);
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.container.padding {
+    background-color: #FFF;
+}
+
+.catalog-button {
+    display: inline-block;
+    background-color:#70C05B ;
+    padding: 8px 8px 8px 10px;
+    color: var(--color-category);
+    border-radius: 4px;
+}
+.catalog-button::before {
+    display: inline-block;
+    content: "|||";
+    color: #FFF;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+.catalog-button:not(:hover):before{
+    transition: 3s ;
+    transform: rotate(90deg);
+}
+.catalog-button:hover:before{
+    transition: 3s ;
+    transform: rotate(180deg);
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.catalog-name_container {
+    position: absolute;
+    width: var(--width);
+    padding: 0 var(--padding);
+    display: none;
+    grid-template-columns: repeat(4,1fr);
+    /* padding: 40px 0; */
+    background-color: #FFF;
+    row-gap: 24px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    left: 0;
+    z-index: 1;
+    transform: translate(14%,0);
+}
+
+.container.padding > .show {
+    display:grid !important;
+    
+}
+.text_name {
+    display: inline;
+    font-size: 16px;
+    color: #414141;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 40px 0;
+}
+
+.text_name:hover {
+    color: #FF6633;
+}
+
+#search_field {
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+    width: 375px;
+    height: 40px;
+}
+.searche_div {
+    position: relative;
+}
+.searche_div::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/header/search.png");
+    right: 0;
+    top: 50%;
+
+    transform: translate(-20%,-50%);
+}
+
+.user_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.user-menu {
+    width: 13px;
+    height: 7px;
+    background-image: url("../img/header/menu_user.png");
+}
+
+.menu_list {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #FFF;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.show_menu {
+    display: flex;
+}
+
+.item_menu:hover {
+    color: #F63;
+
+    transition: all ease-in-out .4s;
+} 
+
+.user-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+.user-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-link:hover {
+    color: #F63;
+    transition: all ease-in-out .4s;
+}
+
+.user {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-user {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+.link_menu {
+    color: #414141;
+}
+
+.navigation {
+    position: relative;
+    max-width: 100%;
+    background-color: var(--background);
+    font-size: 12px;
+    padding-top: 27px;
+
+}
+
+.link-page {
+    position: relative;
+    color: #414141;
+    margin-right: 49px;
+    margin-top: 27px;
+
+}
+
+.link-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+
+    transform: translate(400%,10%);
+
+    background-image: url("../img/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.link-page:last-child::after {
+    background-image: url();
+}
+
+.active {
+   color: #8F8F8F;
+}
+
+.ctalog {
+    margin-top: 27px;
+    z-index: 0;
+}
+
+.title {
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 150%;
+}
+
+.contaner-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 40px;
+}
+
+.card_catalog {
+    position: relative;
+    display: inline-block;
+    width: 272px;
+    height: 200px;
+}
+
+.card_catalog img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bacground-text {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 117px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(112, 192, 91, 0) 0%, #70C05B 82.81%);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    align-items: last baseline;
+}
+
+.bacground-text-hover {
+    background: linear-gradient(180deg, rgba(255, 102, 51, 0.00) 0%, #F63 100%);
+}
+
+
+.text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-category);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: var(--width);
+    margin: 0 auto;
+    background-color: rgba(249, 244, 226, 1);
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 54px;
+}
+
+
+.logo img {
+    height: 60px;
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.link_item {
+    color: #414141;
+}
+.link_item:hover {
+    color: #F63;
+    transition:all ease-in-out .4s;
+}
+.social_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    column-gap: 10px;
+}
+
+.phone .text {
+    color: #414141;
+}
+
+
+
