@@ -57,3 +57,19 @@ userMenu.addEventListener('mouseout', () => {
     const userListMenu = document.querySelector('.menu_list')
     userListMenu.classList.remove('show_menu')
 })
+
+const enterButton = document.querySelector('.enter_button')
+enterButton.addEventListener('click', event => {
+    const div = document.querySelector('.register_and_auf')
+    div.classList.remove('none')
+    const form = document.querySelector('.enter_form')
+    form.classList.remove('none')
+})
+
+const registerButton = document.querySelector('.register_button') 
+registerButton.addEventListener('click', event => {
+    const div = document.querySelector('.register_and_auf')
+    div.classList.remove('none')
+    const form = document.querySelector('.register_form')
+    form.classList.remove('none')
+})
