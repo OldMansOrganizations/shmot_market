@@ -50,12 +50,12 @@
                 </div>
             </div>
           <ul class="menu_list">
-            <li class="item_menu"><a href="" class="link_menu">Вход</a></li>
+            <li class="item_menu"><button class="link_menu enter_button">Вход</button></li>
             <li class="item_menu">
-              <a href="" class="link_menu">Регистрация</a>
+              <button class="link_menu register_button">Регистрация</button>
             </li>
             <li class="item_menu">
-              <a href="" class="link_menu">Выход</a>
+              <button class="link_menu exit_button">Выход</button>
             </li>
           </ul>
         </div>
@@ -88,84 +88,84 @@
       <div class="ctalog">
         <h2 class="title">Каталог</h2>
         <div class="contaner-card">
-          <div class="card_catalog">
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
-          <div class="card_catalog">
+          </a>
+          <a href="#" class="card_catalog">
             <img src="static/img/bask.png" alt="">
             <div class="bacground-text">
               <p class="text">Хлеб</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -233,5 +233,41 @@
       </div>
     </footer>
     <script src="static/js/main.js"></script>
+
+    <div class="register_and_auf none">
+      <form class="form register_form none" method="post">
+        <button class="close_form"><img src="static/img/form/close.svg" alt=""></button>
+        <p class="welcom">Регистрация</p>
+        <p class="name">Имя</p>
+        <input class="name_inp" type="text" name="name" placeholder="Введите имя">
+        <p class="login">Логин</p>
+        <input class="login_inp" type="text" name="login" placeholder="Введите логин">
+        <p class="email">Почта</p>
+        <input class="email_inp" type="email" name="email" placeholder="Введите email">
+        <p class="password">Пароль</p>
+        <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+        <p class="repeat_password">Повторите пароль</p>
+        <input class="repeat_password_inp" type="password" name="repeate_password" placeholder="Введите повторно пароль">
+        <input class="register" type="submit" value="Зарегистрироваться" id="register_user">
+        <div class="buttons">
+          <a href="#" class="link_ent">Вход</a>
+          <a href="#" class="link_forgot">Забыли пароль?</a>
+        </div>
+      </form>
+
+      <form class="form enter_form none" method="post">
+        <button class="close_form"><img src="static/img/form/close.svg" alt=""></button>
+        <p class="welcom">Вход</p>
+        <p class="email">Почта</p>
+        <input class="email_inp" type="email" name="email" placeholder="Введите email">
+        <p class="password">Пароль</p>
+        <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+        <input class="register" type="submit" value="Войти" id="register_user">
+        <div class="buttons">
+          <a href="#" class="link_ent">Регистрация</a>
+          <a href="#" class="link_forgot">Забыли пароль?</a>
+        </div>
+      </form>      
+    </div>
   </body>
 </html>
