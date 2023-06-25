@@ -191,12 +191,7 @@ gap: 8px;
 align-self: stretch;
 border-radius: 4px;
 border: 1px solid #70C05B;
-
 color: #70C05B;
-/* text-align: center; */
-/* Desc/Text/S */
-/* font-size: 16px; */
-/* font-family: Rubik; */
 line-height: 150%;
 }
 
@@ -205,6 +200,11 @@ line-height: 150%;
     color: #FFF;
     border-color: #F63;
     transition: all ease-in-out .4s;
+}
+
+.to_bascket:active {
+    box-shadow: 0 -2px 0 0 #000;
+    opacity: 20%;
 }
 
 .special_offers {

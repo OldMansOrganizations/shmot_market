@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукты</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container padding">
+          <div class="header-container">
+            <a href="index.html" class="logo">
+              <img src="./static/img/logo/logo.svg" alt="logo" />
+            </a>
+            <div class="catalog-button">
+              <a href="catalog.html" class="link">Каталог</a>
+            </div>
+            <div class="searche_div">
+              <input
+                type="search"
+                name="search"
+                id="search_field"
+                placeholder="Найти"
+              />
+            </div>
+  
+            <ul class="user-list">
+              <li class="user-item">
+                <img src="static/img/header/user_list_img/heart.png" alt="" />
+                <a href="#" class="user-link">Избранное</a>
+              </li>
+              <li class="user-item">
+                <img src="static/img/header/user_list_img/cube.png" alt="" />
+                <a href="#" class="user-link">Заказы</a>
+              </li>
+              <li class="user-item">
+                <img
+                  src="static/img/header/user_list_img/shopping-cart.png"
+                  alt=""
+                />
+                <a href="#" class="user-link">Корзина</a>
+              </li>
+            </ul>
+            <div class="user">
+              <div class="user_container">
+                  <img src="./static/img/photo_man.jpg" alt="photo_user" class="img-user"/>
+                  <p class="name-user">Алексей</p>
+                  <div class="user-menu">
+                  </div>
+              </div>
+            <ul class="menu_list">
+              <li class="item_menu"><button class="link_menu enter_button">Вход</button></li>
+              <li class="item_menu">
+                <button class="link_menu register_button">Регистрация</button>
+              </li>
+              <li class="item_menu">
+                <button class="link_menu exit_button">Выход</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <div class="container padding">
+              <div class="catalog-name_container">
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Непродовольственные товары</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                  <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+                </div>
+    </div>
+      
+    <div class="container">
+        <div class="navigation">
+            <a href="#" class="link-page">Главная</a>
+            <a href="#" class="link-page">Каталог</a>
+            <a href="#" class="link-page active">Молоко, сыр, яйцо</a>
+        </div>
+    </div>
+    <main class="products_content">
+        <div class="container">
+            <h1 class="title title_products">Молоко, сыр, яйцо</h1>
+
+            <div class="sub_categories">
+                <button class="link_sub_categories">Товары нашего производства</button>
+                <button class="link_sub_categories">Полезное питание</button>
+                <button class="link_sub_categories">Без ГМО</button>
+            </div>
+
+            <div class="block_products">
+                <div class="filter">
+                    <p class="title_filter">Фильтр</p>
+                    <div class="price_filter">
+                        <div class="row_1_filter">
+                            <p class="name_price">Цена</p>
+                            <button class="clrBtn_price">Очистить</button>
+                        </div>
+                        <div class="row_2_filter">
+                            <input type="number" name="min_price" id="min_price" class="input_price" placeholder="1">
+                            <span class="line"></span>
+                            <input type="number" name="max_price" id="max_price" class="input_price" placeholder="100">
+                        </div>
+                        <div class="slider-track">
+                            <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()">
+                            <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()">
+                        </div>
+                    </div>
+                    
+                    <ul class="list_categories">
+                        <li class="category"><a href="#" class="link_category">Молоко</a></li>
+                        <li class="category"><a href="#" class="link_category">Сливки</a></li>
+                        <li class="category"><a href="#" class="link_category">Яйцо</a></li>
+                    </ul>
+                    <label class="switch">
+                        <input type="checkbox" name="in_stock" id="in_stock">
+                        <span class="block_for_switch"></span>
+                        <span class="text_for_swicth">В наличии</span>
+                    </label>
+                    <button class="use_filter">Применить</button>
+                </div>
+                <div class="view_produts">
+                    <div class="select_filter">
+                        <button class="select_filter_button">Фильтр 4</button>
+                        <button class="select_filter_button">Цена от 99 до 2599</button>
+                        <button class="select_filter_button clr_filter">Очистить фильтры</button>
+                    </div>
+                    <div class="card_content">
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="card_product" >
+                            <div class="img_crad_product" style="background-image: url(./static/img/product/blin.jpg);">
+                                <button class="like"><img src="static/img/product/heart.svg" alt="like"></button>
+                                <div class="discount">50%</div>
+                            </div>
+                            <div class="content_product">
+                                <div class="price">
+                                    <div class="discount_price">
+                                        <p class="text_price"> 33.04</p>
+                                        <p class="discription_price ">Цена со скидкой</p>
+                                    </div>
+                                    <div class="normal_price">
+                                        <p class="text_price text_price_normal"> 55.76</p>
+                                        <p class="discription_price">Цена без скидки</p>
+                                    </div>
+                                </div>
+                                <p class="name_product">Г/Ц Блинчики с мясом вес, Россия</p>
+                                <div class="rating">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="" class="star">
+                                    <img src="static/img/product/star.svg" alt="st" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                    <img src="static/img/product/star_smoke.svg" alt="" class="star">
+                                </div>
+        
+                                <button class="to_bascket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="show_more">Показать еще</button>
+                    <div class="pagination">
+                        <button class="to_begining pagination_button"></button>
+                        <button class="back pagination_button"></button>
+                        <a href="#" class="page_pagination">16</a>
+                        <a href="#"  class="page_pagination">1</a>
+                        <a href="#"  class="page_pagination">2</a>
+                        <a href="#"  class="page_pagination">3</a>
+                        <a href="#"  class="page_pagination">4</a>
+                        <a href="#"  class="page_pagination">5</a>
+                        <a href="#"  class="page_pagination">6</a>
+                        <button class="next pagination_button"></button>
+                        <button class="to_ending pagination_button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_container">
+            <a href="index.html" class="logo">
+                <img src="./static/img/logo/logo.svg" alt="logo" />
+            </a>
+            <ul class="footer_list">
+                <li class="item_list">
+                <a href="#" class="link_item">О компании</a>
+                </li>
+                <li class="item_list">
+                <a href="#" class="link_item">Контакты</a>
+                </li>
+                <li class="item_list">
+                <a href="#" class="link_item">Вакансии</a>
+                </li>
+                <li class="item_list"><a href="#" class="link_item">Статьи</a></li>
+                <li class="item_list">
+                <a href="#" class="link_item"
+                    >Политика обработки персональных данных</a
+                >
+                </li>
+            </ul>
+            <ul class="social_list">
+                <li class="item_list">
+                <a href="#" class="link_item"
+                    ><img
+                    src="./static/img/footer/social/instagram.png"
+                    alt=""
+                    class="img-social"
+                /></a>
+                </li>
+                <li class="item_list">
+                <a href="#" class="link_item"
+                    ><img
+                    src="./static/img/footer/social/vkontakte.png"
+                    alt=""
+                    class="img-social"
+                /></a>
+                </li>
+                <li class="item_list">
+                <a href="#" class="link_item"
+                    ><img
+                    src="./static/img/footer/social/facebook.png"
+                    alt=""
+                    class="img-social"
+                /></a>
+                </li>
+                <li class="item_list">
+                <a href="#" class="link_item"
+                    ><img src="./footer/social/ok.png" alt="" class="img-social"
+                /></a>
+                </li>
+            </ul>
+    
+            <div class="phone">
+                <img src="./static/img/footer/phone.svg" alt="phone_logo" class="img_phone" />
+                <p class="text">8-987-158-82-68</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/js/main.js"></script>
+    
+    <div class="register_and_auf none">
+        <form class="form register_form none" method="post">
+            <button class="close_form"><img src="static/img/form/close.svg" alt=""></button>
+            <p class="welcom">Регистрация</p>
+            <p class="name">Имя</p>
+            <input class="name_inp" type="text" name="name" placeholder="Введите имя">
+            <p class="login">Логин</p>
+            <input class="login_inp" type="text" name="login" placeholder="Введите логин">
+            <p class="email">Почта</p>
+            <input class="email_inp" type="email" name="email" placeholder="Введите email">
+            <p class="password">Пароль</p>
+            <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+            <p class="repeat_password">Повторите пароль</p>
+            <input class="repeat_password_inp" type="password" name="repeate_password" placeholder="Введите повторно пароль">
+            <input class="register" type="submit" value="Зарегистрироваться" id="register_user">
+            <div class="buttons">
+            <a href="#" class="link_ent">Вход</a>
+            <a href="#" class="link_forgot">Забыли пароль?</a>
+            </div>
+        </form>
+    
+        <form class="form enter_form none" method="post">
+            <button class="close_form"><img src="static/img/form/close.svg" alt=""></button>
+            <p class="welcom">Вход</p>
+            <p class="email">Почта</p>
+            <input class="email_inp" type="email" name="email" placeholder="Введите email">
+            <p class="password">Пароль</p>
+            <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+            <input class="register" type="submit" value="Войти" id="register_user">
+            <div class="buttons">
+            <button class="link_ent move_register_form">Регистрация</button>
+            <a href="#" class="link_forgot">Забыли пароль?</a>
+            </div>
+        </form>      
+    </div>
+</body>
+</html>

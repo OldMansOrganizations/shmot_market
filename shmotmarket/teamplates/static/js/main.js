@@ -73,3 +73,7 @@ registerButton.addEventListener('click', event => {
     const form = document.querySelector('.register_form')
     form.classList.remove('none')
 })
+// slider range
+
+
+// end slider range
