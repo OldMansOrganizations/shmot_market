@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;700&family=Rubik:wght@400;700&display=swap');
 @import url(main.css);
 @import url(form.css);
+@import url(products.css);
+@import url(slider_range.css);
+@import url(orders.css);
 :root {
     --width: 1440px;
     --padding:116px;
@@ -141,6 +144,29 @@ a {
     background-image: url("../img/header/menu_user.png");
 }
 
+.user-item {
+    position: relative;
+}
+
+.count_orders {
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 102, 51, 1);
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    right: 25%;
+    top:0;
+
+    transform: translate(-30%,-25%);
+}
+.count_orders.none {
+    display: none;
+}
+
 .menu_list {
     position: absolute;
     display: none;
@@ -153,6 +179,43 @@ a {
     padding: 10px;
     z-index: 1;
 }
+.item_menu {
+    display: flex;
+    justify-content: space-between;
+}
+.item_menu::after {
+    display: inline-block;
+    width: 13px;
+    height: 7px;
+    background-image: url("../img/header/menu_user.png");
+    content: "";
+}
+.link_menu.enter_button {
+    position: relative;
+    display: flex;
+    width: 157px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F63;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.enter_button::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url("../img/header/user_list_img/log-in.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    right: 5%;
+    top: 50%;
+
+    transform: translate(0,-50%);
+} 
 
 .show_menu {
     display: flex;
@@ -176,10 +239,20 @@ a {
     justify-content: space-between;
 }
 
-.user-link:hover {
+.user-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-link:hover,
+.user-link:hover svg path {
+    fill: #F63;
     color: #F63;
     transition: all ease-in-out .4s;
 }
+
 
 .user {
     position: relative;

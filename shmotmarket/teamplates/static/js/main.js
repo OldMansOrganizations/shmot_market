@@ -1,7 +1,4 @@
-const div = document.querySelector('.catalog-button')
-div.addEventListener('mouseover',overButton)
-document.querySelector('.catalog-name_container').addEventListener('mouseover',overButton)
-document.querySelector('.catalog-name_container').addEventListener('mouseout',outButton)
+
 function overButton() {
     const div1 = document.querySelector('.catalog-name_container')
     div1.classList.add('show')
@@ -32,11 +29,17 @@ likes.forEach(like => {
 
 const discounts = document.querySelectorAll('.discount')
 discounts.forEach(discount => {
-    if(discount.innerText === '') {
+    if(discount.innerText === '' || discount.innerText === '0') {
         discount.classList.add('none')
     }
 })
 
+const count_orders = document.querySelectorAll('.count_orders')
+count_orders.forEach(count => {
+    if(count.innerText === '' || count.innerText === '0') {
+        count.classList.add('none')
+    }
+})
 const userMenu = document.querySelector('.user')
 const userListMenu = document.querySelector('.menu_list')
 userListMenu.addEventListener('mouseout', () => {
@@ -58,18 +61,28 @@ userMenu.addEventListener('mouseout', () => {
     userListMenu.classList.remove('show_menu')
 })
 
-const enterButton = document.querySelector('.enter_button')
-enterButton.addEventListener('click', event => {
+function move_enter() {
     const div = document.querySelector('.register_and_auf')
     div.classList.remove('none')
     const form = document.querySelector('.enter_form')
     form.classList.remove('none')
-})
+}
 
-const registerButton = document.querySelector('.register_button') 
-registerButton.addEventListener('click', event => {
-    const div = document.querySelector('.register_and_auf')
-    div.classList.remove('none')
-    const form = document.querySelector('.register_form')
-    form.classList.remove('none')
-})
+function move_register() {
+    const form_reg = document.querySelector('.register_form')
+    const form_ent = document.querySelector('.enter_form')
+    form_ent.classList.add('none')
+    form_reg.classList.remove('none')
+}
+
+function close_form() {
+    const form = this.event.target.parentNode.parentNode
+    form.classList.add('none')
+    const div = form.parentNode
+    div.classList.add('none')
+}
+
+// slider range
+
+
+// end slider range
