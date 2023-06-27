@@ -53,6 +53,7 @@ register_form none {
     gap: 8px;
     border-radius: 4px;
     background: #F3F2F1;
+    cursor: pointer;
 }
 
 .welcom {
@@ -119,6 +120,7 @@ line-height: 150%;
     color:  #70C05B;
     font-size: 12px;
     line-height: 150%;
+    cursor: pointer;
 }
 
 .link_forgot {

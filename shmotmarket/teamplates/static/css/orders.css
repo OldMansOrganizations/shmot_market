@@ -1,0 +1,53 @@
+.title_orders {
+    padding-top:24px;
+    margin-bottom: 60px;
+}
+
+.first-line_orders {
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-between;
+}
+
+.detail_orders {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    color:  #414141;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #F3F2F1;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.order {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.price_order {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.select_date_btn {
+    color: #fff;
+    width: 200px;
+    padding: 8px;
+    background-color: #70C05B;
+}
+
+.date_input {
+    width: 21px;
+    overflow: hidden;
+}
