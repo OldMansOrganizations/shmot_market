@@ -242,7 +242,7 @@
     content: "";
     width: 17px;
     height: 17px;
-    background-image: url("../img/x_w.svg");
+    background-image: url("../../teamplates/static/img/x_w.svg");
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events:fill;
@@ -254,7 +254,7 @@
 }
 
 .clr_filter:after {
-    background-image: url("../img/x.svg");
+    background-image: url("../../teamplates/static/img/x.svg");
 }
 
 .card_content {
@@ -300,19 +300,19 @@
 }
 
 .to_begining {
-    background-image: url("../img/pagination_btn/to_begining.png");
+    background-image: url("../../teamplates/static/img/pagination_btn/to_begining.png");
 }
 
 .back {
-    background-image: url("../img/pagination_btn/back.png");
+    background-image: url("../../teamplates/static/img/pagination_btn/back.png");
 }
 
 .to_ending {
-    background-image: url("../img/pagination_btn/to_begining.png");
+    background-image: url("../../teamplates/static/img/pagination_btn/to_begining.png");
     transform: rotate(180deg);
 }
 .next {
-    background-image: url("../img/pagination_btn/back.png");
+    background-image: url("../../teamplates/static/img/pagination_btn/back.png");
     transform: rotate(180deg);
 }
 

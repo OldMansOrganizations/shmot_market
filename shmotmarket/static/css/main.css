@@ -72,7 +72,7 @@
 
     transform: translate(0,10%);
 
-    background-image: url("../img/arrow.svg");
+    background-image: url("../../teamplates/static/img/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }

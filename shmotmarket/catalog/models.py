@@ -42,7 +42,7 @@ class Products(models.Model):
 	product_slag = models.CharField(verbose_name='Имя товара для ссылки', max_length=50)
 	company_name = models.CharField(max_length=45, verbose_name='Компания производитель')
 	country_name = models.CharField(max_length=45, verbose_name='Страна производитель')
-	photo_product = models.ImageField()
+	photo_product = models.ImageField(upload_to='product')
 	
 	class Meta:
 		verbose_name = "Продукт"
