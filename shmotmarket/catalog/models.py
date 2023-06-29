@@ -6,6 +6,7 @@ class Categories(models.Model):
 	id_category = models.AutoField(primary_key=True)
 	name_category = models.CharField(max_length=45, verbose_name='Имя категории')
 	category_slag = models.CharField(max_length=50, verbose_name='Имя категории для ссылки')
+	photo_categories = models.ImageField(upload_to='images/categories/')
 	
 	class Meta:
 		verbose_name = "Категорию"
@@ -20,6 +21,7 @@ class SubCategories(models.Model):
 	id_subcategory = models.AutoField(primary_key=True)
 	name_subcategory = models.CharField(max_length=45, verbose_name='Имя допкатегории')
 	subcategory_slag = models.CharField(max_length=50, verbose_name='Имя допкатегории для ссылки')
+	photo_subcategories = models.ImageField(upload_to='images/subcategories/')
 	
 	class Meta:
 		verbose_name = "Подкатегорию"
@@ -42,7 +44,7 @@ class Products(models.Model):
 	product_slag = models.CharField(verbose_name='Имя товара для ссылки', max_length=50)
 	company_name = models.CharField(max_length=45, verbose_name='Компания производитель')
 	country_name = models.CharField(max_length=45, verbose_name='Страна производитель')
-	photo_product = models.ImageField(upload_to='product')
+	photo_product = models.ImageField(upload_to='images/products/')
 	
 	class Meta:
 		verbose_name = "Продукт"
@@ -52,4 +54,3 @@ class Products(models.Model):
 	def __str__(self):
 		return self.name_product
 	
-

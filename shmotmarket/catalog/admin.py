@@ -4,14 +4,14 @@ from catalog.models import Products, Categories, SubCategories
 
 @admin.register(Products)
 class PersonAdmin(admin.ModelAdmin):
-    pass
+	pass
 
 
 @admin.register(Categories)
 class PersonAdmin(admin.ModelAdmin):
-    pass
+	pass
 
 
 @admin.register(SubCategories)
 class PersonAdmin(admin.ModelAdmin):
-    pass
+	pass
