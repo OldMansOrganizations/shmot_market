@@ -124,7 +124,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("../img/header/search.png");
+    background-image: url("../../teamplates/static/img/header/search.png");
     right: 0;
     top: 50%;
 
@@ -141,7 +141,7 @@ a {
 .user-menu {
     width: 13px;
     height: 7px;
-    background-image: url("../img/header/menu_user.png");
+    background-image: url("../../teamplates/static/img/header/menu_user.png");
 }
 
 .user-item {
@@ -187,7 +187,7 @@ a {
     display: inline-block;
     width: 13px;
     height: 7px;
-    background-image: url("../img/header/menu_user.png");
+    background-image: url("../../teamplates/static/img/header/menu_user.png");
     content: "";
 }
 .link_menu.enter_button {
@@ -206,7 +206,7 @@ a {
     position: absolute;
     content: "";
     display: inline-block;
-    background-image: url("../img/header/user_list_img/log-in.svg");
+    background-image: url("../../teamplates/static/img/header/user_list_img/log-in.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
@@ -301,7 +301,7 @@ a {
 
     transform: translate(400%,10%);
 
-    background-image: url("../img/arrow.svg");
+    background-image: url("../../teamplates/static/img/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
