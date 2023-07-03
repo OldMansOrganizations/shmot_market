@@ -22,7 +22,8 @@
                 <div class="second-line">
                     {% for i in products %}
                         <div class="card_product">
-                            <div class="img_crad_product" style="background-image: url({% static "img/product/blin.jpg" %});">
+                                <div class="img_crad_product" style="background-image: url('{{ i.photo_product.url }}');
+                                 background-position: center center; background-size: cover; width: 272px; height: 274px;">
                                 <button class="like"><img src="{% static "img/product/heart.svg" %}" alt="like"></button>
                                 <div ontimeupdate="check_discount()" class="discount">0</div>
                             </div>
