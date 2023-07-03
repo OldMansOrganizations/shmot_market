@@ -77,19 +77,9 @@
 
     <div class="container padding">
         <div onmouseover="overButton()" onmouseout="outButton()" class="catalog-name_container">
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Непродовольственные товары</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
-            <a href="#" class="text_name">Молоко, сыр, яйцо</a>
+            {% for i in catalog %}
+                <a href="#" class="text_name">{{ i.name_category }}</a>
+            {% endfor %}
         </div>
     </div>
 
