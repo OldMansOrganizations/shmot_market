@@ -1,3 +1,8 @@
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+}
 .title_orders {
     padding-top:24px;
     margin-bottom: 60px;
@@ -29,6 +34,16 @@
     font-size: 16px;
 }
 
+.unavaible {
+    color:#F2F2F2;
+    background: #D80000;
+}
+
+.complite {
+    background: #70C05B;
+    color:#F2F2F2;
+}
+
 .order {
     display: flex;
     align-items: center;
@@ -41,13 +56,80 @@
 }
 
 .select_date_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
     color: #fff;
     width: 200px;
     padding: 8px;
     background-color: #70C05B;
 }
 
+.to_order_btn {
+    
+    background:  #F63;
+}
+
+.select_date_btn:hover {
+    color: #F63;
+    transition: all ease-in-out .4s;
+}
+
+
+
 .date_input {
     width: 21px;
     overflow: hidden;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 1px;
+    opacity: 0.9;
+    filter: invert(100%);
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    filter: invert(48%) sepia(41%) saturate(2234%) hue-rotate(338deg) brightness(103%) contrast(104%);
+  }
+
+  .show_btn {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    column-gap: 8px;
+    width: 200px;
+    padding: 8px;
+    border-radius: 4px;
+    background:  #F3F2F1;
+  } 
+
+  .show_btn:hover {
+    color: #F63;
+    transition: all ease-in-out .4s;
+  }
+
+  .show_btn span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/order/eye.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .show_more_btn {
+    align-self: center;
+    width: 193px;
+    height: 60px;
+    padding: 16px;
+    border-radius: 4px;
+    background:  #F3F2F1;
+  }
+
+  .show_more_btn:hover {
+    color: #F63;
+    transition: all ease-in-out .4s;
+  }
