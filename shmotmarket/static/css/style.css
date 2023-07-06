@@ -6,6 +6,8 @@
 @import url(products.css);
 @import url(slider_range.css);
 @import url(orders.css);
+@import url(bucket.css);
+@import url(about.css);
 :root {
     --width: 1440px;
     --padding:116px;
