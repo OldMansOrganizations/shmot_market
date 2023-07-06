@@ -1,0 +1,374 @@
+.bucket {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.bucket_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.highlight_status {
+    display: flex;
+    column-gap: 40px;
+    color: #606060;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.highlight_all {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.highlight_all:hover {
+    color: #F63;
+}
+
+.highlight_remove {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight_remove:hover {
+    color: #F63;
+}
+
+.highlight_all_btn {
+    display: none;
+}
+
+.fake_highlight_all {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #BFBFBF;
+    background: #F3F2F1;
+}
+
+.highlight_all_btn:checked + .fake_highlight_all::after {
+    content: "-";
+    font-size: 20px;
+    color: #fff;
+    background-color: #70C05B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid  #F3F2F1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    transition: all .3s;
+}
+
+.bucket_item {
+    position: relative;
+    display: flex;
+    column-gap: 16px;
+    border-radius: 4px;
+    background:  #FFF;
+    /* Default/XS */
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.image_item {
+    display: flex;
+    width: 80px;
+    height: 60px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    margin-right: 8px;
+}
+
+.price_bucket {
+    column-gap: 8px;
+    justify-content: start;
+}
+
+.description_item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 536px;
+    padding: 10px 0;
+}
+
+.text_price_bucket,
+.discription_price_bucket {
+    font-size: 12px;
+}
+
+.discount_item {
+    display: flex;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background:  #F63;
+    align-items: center;
+    color: #FFF;
+}
+
+.quantity_product_bucket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 8px;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background: #70C05B;
+    color: #FFF;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.minus {
+    cursor: pointer;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.minus:hover,
+.plus:hover {
+    font-size: 28px;
+}
+
+.total_price {display: flex;
+    column-gap: 4px;
+    padding: 8px;
+text-align: right;
+/* Desc/Text-Bold/M */
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+.total_price:after {
+    content: "₽";
+}
+
+.in_stoke {
+    color: #414141;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 8px;
+}
+
+.not_stoke {
+    opacity: 0.5;
+}
+
+.label_choice {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(25%,-50%);
+}
+
+.fake_choice {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid  #BFBFBF;
+    background: #FFF;
+}
+
+.choice_checkbox {
+    display: none;
+}
+
+.choice_checkbox:checked + .fake_choice::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 4px;
+    background: #70C05B;
+    background-image: url("../img/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.place_an_order {
+    padding-top: 45px;
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.bonus {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.switch_bonus {
+    display: flex;
+    column-gap: 10px;
+}
+
+.text_for_swicth_bonus {
+    color: #414141;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.info_bonus {
+    color:  #8F8F8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.separator {
+    width: 100%;
+    height: 2px;
+    background: #F3F2F1;
+}
+
+.info_price_total {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color:  #8F8F8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.price_order_bucket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount_order_bucket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total_price_order {
+    color: #414141;
+}
+
+.discount_price {
+    color:#F63;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8F8F8F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 100%;
+}
+
+.total_price_info {
+    color: #414141;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.get_bonus {
+    display: flex;
+    padding: 8px;
+    column-gap: 8px;
+    align-items: center;
+    align-self: center;
+}
+
+.get_bonus_text {
+    color: #70C05B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.total_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.make_orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+
+.error_price_order {
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #D80000;
+    color: var(--main-on-primary, #FFF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.make_orders_btn {
+    width: 272px;
+    padding: 16px;
+    border-radius: 4px;
+    background: #FCD5BA;
+    color: var(--main-primary, #F63);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.make_orders_btn:hover {
+    box-shadow: #FCD5BA;
+    filter: blur(10%);
+    opacity: 50%;
+}
+
+.make_orders_btn:active {
+    box-shadow: #000;
+    opacity: 20%;
+}
