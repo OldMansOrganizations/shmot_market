@@ -1,0 +1,93 @@
+.about_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+    padding-bottom: 83.5px;
+}
+.welcom_text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 96px;
+}
+.about_text {
+    color: #F63;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.achievements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.achievement {
+    display: flex;
+    column-gap: 10px;
+}
+
+.achievement img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.text_achievement {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    color: #414141;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.text_achievement p:last-child {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.thank {
+    display: flex;
+    column-gap: 40px;
+    align-self: center;
+}
+
+.smile {
+    width: 127px;
+    height: 103px;
+    background: url(../img/about_fon/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.massage {
+    display: flex;
+}
+
+.right p {
+    color: #70C05B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.right {
+    border-radius: 16px;
+    background: #E5FFDE;
+    padding: 30px 40px;
+}
+
+.left svg {
+    margin-top: 30px;
+    fill: #E5FFDE;
+}
+
