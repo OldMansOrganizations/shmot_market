@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalog.models import Products, Categories, SubCategories
+from base.models import Products, Categories, SubCategories
 
 
 @admin.register(Products)

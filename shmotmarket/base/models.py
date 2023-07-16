@@ -9,6 +9,7 @@ class Categories(models.Model):
 	photo_categories = models.ImageField(upload_to='images/categories/')
 	
 	class Meta:
+		app_label = 'base'
 		verbose_name = "Категорию"
 		verbose_name_plural = "Категории"
 		db_table = 'categories'
@@ -24,6 +25,7 @@ class SubCategories(models.Model):
 	photo_subcategories = models.ImageField(upload_to='images/subcategories/')
 	
 	class Meta:
+		app_label = 'base'
 		verbose_name = "Подкатегорию"
 		verbose_name_plural = "Подкатегории"
 		db_table = 'subcategories'
@@ -47,6 +49,7 @@ class Products(models.Model):
 	photo_product = models.ImageField(upload_to='images/products/')
 	
 	class Meta:
+		app_label = 'base'
 		verbose_name = "Продукт"
 		verbose_name_plural = "Продукты"
 		db_table = 'products'
