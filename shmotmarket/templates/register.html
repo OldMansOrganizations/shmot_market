@@ -1,0 +1,36 @@
+    <div class="register_and_auf none">
+        <form class="form register_form none" method="post">
+            <p onclick="close_form()" class="close_form"><img src="static/img/form/close.svg" alt=""></p>
+            <p class="welcom">Регистрация</p>
+            <p class="name">Имя</p>
+            <input class="name_inp" type="text" name="name" placeholder="Введите имя">
+            <p class="login">Логин</p>
+            <input class="login_inp" type="text" name="login" placeholder="Введите логин">
+            <p class="email">Почта</p>
+            <input class="email_inp" type="email" name="email" placeholder="Введите email">
+            <p class="password">Пароль</p>
+            <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+            <p class="repeat_password">Повторите пароль</p>
+            <input class="repeat_password_inp" type="password" name="repeate_password"
+                placeholder="Введите повторно пароль">
+            <input class="register" type="submit" value="Зарегистрироваться" id="register_user">
+            <div class="buttons">
+                <button href="#" class="link_ent">Вход</button>
+                <a href="#" class="link_forgot">Забыли пароль?</a>
+            </div>
+        </form>
+
+        <form class="form enter_form none" method="post">
+            <p onclick="close_form()" class="close_form"><img src="static/img/form/close.svg" alt=""></p>
+            <p class="welcom">Вход</p>
+            <p class="email">Почта</p>
+            <input class="email_inp" type="email" name="email" placeholder="Введите email">
+            <p class="password">Пароль</p>
+            <input class="password_inp" type="password" name="password" placeholder="Введите пароль">
+            <input class="register" type="submit" value="Войти" id="registration_user">
+            <div class="buttons">
+                <p onclick="move_register()" class="link_ent move_register_form">Регистрация</p>
+                <a href="#" class="link_forgot">Забыли пароль?</a>
+            </div>
+        </form>
+    </div>
